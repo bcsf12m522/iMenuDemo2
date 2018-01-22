@@ -129,9 +129,16 @@ ul {
 .pb-50 {
   padding-bottom: 50px;
 }
+.pb-60 {
+  padding-bottom: 60px;
+}
 .mb-30 {
   margin-bottom: 30px;
 }
+.ml-30 {
+  margin-left: 30px;
+}
+
 .paddimg-right-none {
   padding-right: 0;
 }
@@ -353,6 +360,9 @@ ul.desc-list li i {
   padding: 15px;
   transition: all 0.3s ease 0s;
 }
+.pt-20 {
+  padding-top: 20px;
+}
 .pt-45 {
   padding-top: 45px;
 }
@@ -394,6 +404,9 @@ ul.desc-list li i {
 }
 .mb-50 {
   margin-bottom: 50px;
+}
+.mb-60 {
+  margin-bottom: 60px;
 }
 .mb-70 {
   margin-bottom: 70px;
@@ -885,7 +898,7 @@ ul.desc-list li i {
 }
 .slider-main .owl-nav {
   position: absolute;
-  top: 50%;
+  top: 36%;
   width: 100%;
   color: #ffffff;
 }
@@ -1046,7 +1059,7 @@ ul.desc-list li i {
 }
 .slider-home .item img {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
 }
 /* ------------------------------------
     06. About-us page css
@@ -1366,7 +1379,7 @@ ul.desc-list li i {
     10. Seo Score
 -------------------------------------*/
 #rs-seo-score {
-  padding: 92px 0 99px;
+  padding: 35px 0 70px;
 }
 #rs-seo-score .cta-content {
   color: #ffffff;
@@ -1563,12 +1576,13 @@ ul.desc-list li i {
   right: -32%;
   top: 60px;
   width: 53%;
+  display: none;
 }
 .rs-performance .items h3 {
   margin: 0 0 15px;
   display: block;
-  font-size: 20px;
-  margin: 53px 0 15px;
+  font-size: 17px;
+  margin: 35px 0 15px;
   text-transform: uppercase;
 }
 .rs-performance .items p {
@@ -1580,7 +1594,7 @@ ul.desc-list li i {
   margin: 0 auto 25px;
   line-height: 120px;
   text-align: center;
-  border: 2px solid #ff6c39;
+  /*border: 2px solid #ff6c39;*/
   border-radius: 50%;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -1604,7 +1618,7 @@ ul.desc-list li i {
   border-radius: inherit;
   content: "";
   height: 138px;
-  left: 32px;
+  left: 14px;
   position: absolute;
   top: -9px;
   width: 138px;
@@ -2353,7 +2367,7 @@ ul.desc-list li i {
   outline: none;
 }
 #rs-testimonial .slick-prev {
-  left: 35%;
+  /*left: 35%;*/
   top: 84px;
   z-index: 999;
   width: 36px;
@@ -2363,7 +2377,7 @@ ul.desc-list li i {
   outline: none;
 }
 #rs-testimonial .slick-next {
-  right: 35%;
+  /*right: 35%;*/
   top: 84px;
   z-index: 999;
   width: 36px;
@@ -4314,7 +4328,7 @@ ul.desc-list li i {
     36. Call To Action
 -------------------------------------*/
 .rs-cta {
-  padding: 70px 0;
+  padding: 30px 0;
   position: relative;
 }
 .rs-cta .cta-content {
@@ -4502,7 +4516,220 @@ ul.desc-list li i {
   line-height: 40px;
 }
 
-.heading_class{
-    font-weight:500;
-    color:#FFF;
+
+
+
+
+
+
+
+#homepage-tabbed .tabbed li.active, .homepage .tabbed li.active {
+    background-color: #ff6c39;
+    border: 1px solid #dbdbdb;
+    border-bottom: none;
 }
+#homepage-tabbed .tabbed li, .cms-home .tabbed li {
+    transition: all .4s ease;
+}
+#homepage-tabbed .tabbed li, .homepage .tabbed li {
+    text-align: center;
+    font-size: 20px;
+    background-color: #eee;
+    border: 1px solid #dadada;
+}
+
+.tabbed-information .tab-content {
+    background-image: linear-gradient(to top,#fcfcfc,#fff);
+    border: 1px solid #dbdbdb;
+    border-top: none;
+    color: #555;
+    padding: 50px 40px 60px;
+    position: relative;
+}
+
+
+.hr_border_color{
+    border-bottom: 2px solid #243a4f;
+}
+
+.tel-link {
+    color: #243a4f;
+    font-size: 24px;
+}
+.telno {
+    margin-top: 25px;
+}
+
+.font_30_bold{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.sec-title h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #505050;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+.tab-content {
+    height: auto !important;
+    padding: 50px 40px 10px !important;
+}
+
+}
+@media screen and (max-width: 767px) {
+#homepage-tabbed .tabbed li a, .homepage .tabbed li a  {
+padding-bottom: 5px;
+padding-top: 7px;
+font-size: 14px;
+font-weight: 600 !important;
+}
+.tabbed li {
+    min-height: 35px;
+}
+.margin_bottom_media_tabbed{
+    margin-bottom:10px;
+}
+}
+
+.rss-foooter .foooter-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1px;
+    width: 100px;
+    background-color: #ff6c39;
+}
+
+#contact_us .readone {
+    /*padding: 23px 42px;*/
+    width: 70%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 15%;
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    font-weight: 500;
+    border: solid 1px #000;
+    /*Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b1b14+1,87553f+52,2b1b14+100 /*/
+    background: rgb(43,27,20); /*Old browsers*/
+    background: -moz-linear-gradient(top, rgba(43,27,20,1) 1%, rgba(135,85,63,1) 78%, rgba(43,27,20,1) 100%); /*/ FF3.6-15 /*/
+    background: -webkit-linear-gradient(top, rgba(43,27,20,1) 1%,rgba(135,85,63,1) 78%,rgba(43,27,20,1) 100%); /*/ Chrome10-25,Safari5.1-6 /*/
+    background: linear-gradient(to bottom, rgba(43,27,20,1) 1%,rgba(135,85,63,1) 78%,rgba(43,27,20,1) 100%); /*/ W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ /*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b1b14', endColorstr='#2b1b14',GradientType=0 ); /*/ IE6-9 /*/
+}
+    #contact_us .readone:hover {
+        width: 70%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 15%;
+    display: block;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        background: transparent;
+        font-weight: 500;
+        border: solid 1px #000;
+        background-color: saddlebrown;
+    }
+
+
+#contact_us .readtwo {
+    /*padding: 23px 42px;*/
+    width: 70%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 15%;
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    font-weight: 500;
+    border: solid 1px #000;
+    /*Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b1b14+1,87553f+52,2b1b14+100 /*/
+    background: rgb(51,109,84);
+    background: -moz-linear-gradient(top, rgba(51,109,84,1) 0%, rgba(35,73,59,1) 85%, rgba(15,33,23,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(51,109,84,1) 0%,rgba(35,73,59,1) 85%,rgba(15,33,23,1) 100%);
+    background: linear-gradient(to bottom, rgba(51,109,84,1) 0%,rgba(35,73,59,1) 75%,rgba(15,33,23,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336d54', endColorstr='#0f2117',GradientType=0 );
+}
+
+#contact_us .readtwo:hover {
+        width: 70%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 15%;
+    display: block;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        background: transparent;
+        font-weight: 500;
+        border: solid 1px #000;
+        background-color: seagreen;
+    }
+
+#contact_us .readthree {
+    /*padding: 23px 42px;*/
+    width: 70%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 15%;
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    font-weight: 500;
+    border: solid 1px #000;
+    background: rgb(132,132,23);
+    background: -moz-linear-gradient(top, rgba(132,132,23,1) 2%, rgba(81,71,14,1) 82%, rgba(61,57,11,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(132,132,23,1) 2%,rgba(81,71,14,1) 82%,rgba(61,57,11,1) 100%);
+    background: linear-gradient(to bottom, rgba(132,132,23,1) 2%,rgba(81,71,14,1) 82%,rgba(61,57,11,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#848417', endColorstr='#3d390b',GradientType=0 );
+}
+
+#contact_us .readthree:hover {
+        width: 70%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 15%;
+    display: block;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        background: transparent;
+        font-weight: 500;
+        border: solid 1px #000;
+        background-color: #677b3c;
+    }
+
+/*@media screen and (max-width: 767px) {
+    #homepage-tabbed .btns-right {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 969px) {
+    #homepage-tabbed .btns-right {
+        display: none;
+    }
+}*/
+
+
+
+

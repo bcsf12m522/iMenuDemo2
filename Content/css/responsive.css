@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 
 
@@ -211,6 +211,23 @@
 /* Medium Layout: 991px. */
 
 @media only screen and (max-width: 991px) {
+
+    #contact_us .readone {
+        font-size: 11px !important;
+        margin-bottom: 10px;
+    }
+
+    #contact_us .readtwo {
+        font-size: 11px !important;
+        margin-bottom: 10px;
+    }
+
+    #contact_us .readthree {
+        font-size: 11px !important;
+        margin-bottom: 10px;
+    }
+
+
  .rs-slider .nivo-controlNav {
  left: auto;
  right: 10%;

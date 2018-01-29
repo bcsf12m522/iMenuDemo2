@@ -1,181 +1,263 @@
-﻿<body>
+﻿<body class="home2">
+    
+    <!--Preload Start-->
+    @{
+        Html.RenderPartial("Include_Views/PreLoader");
+    }
+
+    <!--Preload End-->
+
     <!--Header Start-->
-    <header id="rs-header">
-        <!-- Toolbar Start -->
-        <div class="toolbar-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <div class="logo-area">
-                            <a class="sticky-logo" href="index-2.html"><img src="~/content/images/logo.png" alt="logo"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="toolbar-contact">
-                            <ul>
-                                <li><i class="fa fa-phone"></i><a href="tel:832-872-2736">Questions? Call Us (832) 872-2736</a></li>
-                                <li class="hidden-sm"><i class="fa fa-envelope-o"></i><a href="mailto:support@rstheme.com">support@rstheme.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="toolbar-sl-share">
-                            <ul>
+    @{
+        Html.RenderPartial("Include_Views/Header");
+    }
 
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Toolbar End -->
-
-
-    </header>
     <!--Header End-->
-    <!-- Breadcrumbs Start -->
-    <div class="rs-breadcrumbs sec-spacer mt-5">
+    
+
+    <!-- Slider Section Start Here -->
+
+    <div class="rs-breadcrumbs sec-spacer">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="breadcrumbs-inner">
-                        <h3 class="page-title">iMenu Promo Video</h3>
-                        <ul>
-                            <li class="top-quote">
-                                <button class="btn btn-success">Test Drive Our Demo Site</button>
+                        <h1></h1>
+                        <p class="white-color font-22" data-animation-in="zoomIn" data-animation-out="animate-out fadeOutLeft">Sample text Sample text Sample text Sample text Sample text Sample text Sample text<br /> Sample text Sample text Sample text.</p>
+                        @*<h5 class="page-title">Sample text Sample text Sample text Sample text Sample text </h5>*@
+                        @*<ul>
+                            <li>
+                                <a class="active" href="~/Home/Index">Home</a>
                             </li>
-
-                        </ul>
+                            <li>Contact Us</li>
+                        </ul>*@
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Breadcrumbs End -->
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4" align="center">
-                <div class="logo-area">
-                    <a class="sticky-logo" href="index-2.html"><img src="~/content/images/logo.png" alt="logo"></a>
-                </div>
-            </div>
-            <div class="col-sm-4"></div>
-        </div>
+    
+    <!-- Slider Section end Here -->
+  
 
-        <div class="row mt-5">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4" align="center">
-                <div class="logo-area">
-                    <button class="btn btn-success">Start your Free Trial</button>
-                </div>
-            </div>
-            <div class="col-sm-4"></div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="sec-title">
-            <h2>Key Features</h2>
+    
 
-        </div>
-    </div>
-
-
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-sm-4">
-                <h2>Features Category 1</h2>
-            </div>
-            <div class="col-sm-4">
-                <h2>Features Category 1</h2>
-            </div>
-            <div class="col-sm-4">
-                <h2>Features Category 1</h2>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-sm-4 col-md-4"></div>
-            <div class="col-sm-4 col-md-4" align="center">
-                <div class="logo-area">
-                    <a class="sticky-logo" href="index-2.html"><img src="~/content/images/logo.png" alt="logo"></a>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4"></div>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4" align="center">
-                <div class="logo-area">
-                    <button class="btn btn-success">Start your Free Trial</button>
-                </div>
-            </div>
-            <div class="col-sm-4"></div>
-        </div>
-    </div>
-
-    <!-- Welcome RSSEO Solution  Start-->
-    <div id="welcome-rsseo" class="welcome-rsseo sec-spacer">
+    <!-- Contact Form Start -->
+    <div id="rs-contactform" class="rs-contactform sec-spacer mt-45 mb-70">
         <div class="container">
             <div class="sec-title">
-                <h2>Our Service Strategy</h2>
-                <h4 class="subtitle">Do you want to improve the online visibility of your brand and traffic to your website?</h4>
+                <h2 class="white-color">Get In Touch</h2>
+                @*<h4 class="subtitle">Write your name and say a few words</h4>*@
             </div>
         </div>
-        <div style="clear:both"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6 text-center">
-                    <div class="items">
-                        <div class="glyph-icon flaticon-technology"></div>
-                        <a href="service-details.html"><h3>WEB ANALYTICS</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. eleifend imperdiet</p>
+                <div class="col-sm-12 col-md-12"><div id="form-messages"></div></div>
+                <form id="contact-form" method="post" action="http://codesless.com/products/seo/mailer.php">
+                    <div class="col-sm-6 col-md-3">
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                    </div>
+                  
+                    
+                   
+                    <div class="col-sm-12 col-md-3">
+                        <textarea class="vertical_resize" id="message" name="message" placeholder="Your Message" style="height:184px"></textarea>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                        <input class="submit" type="submit" value="submit" style="width:200px !important"/>
+                    </div>
+
+                    <div class="col-sm-12 col-xs-12 col-md-3 margin_top_20_media">
+                        <p class="floating_div_style">Floating Autoresponder for a prize draw for a free subscription of iMenu for a year. (Aweber Integeration)</p>
+                    </div>
+
+                    
+
+
+                </form>
+            </div>
+
+
+          
+        </div>
+
+        <div id="contact_us" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                        @*<a href="#" class="readone white-color" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Book your Demo</a>*@
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                        <a href="~/Home/Index" class="readtwo white-color" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Home</a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                        @*<a href="#" class="readthree white-color">Arrange a Call</a>*@
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 text-center">
-                    <div class="items">
-                        <div class="glyph-icon flaticon-target"></div>
-                        <a href="service-details.html"><h3>KEYWORD TARGETING</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. eleifend imperdiet</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Contact Form End -->
+
+    
+    <!-- Partner Start -->
+    @*<div id="rs-partner" class="rs-partner sec-spacer mb-90">
+        <div class="container">
+            <div class="partner-carousel owl-carousel">
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/1.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/2.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/3.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/4.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/5.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/6.png" alt="Partner Image"></a>
+                </div>
+            </div>
+        </div>
+    </div>*@
+    <!-- Partner End -->
+
+
+    <!-- REVIEWS Start -->
+    <div id="rs-blog" class="rs-blog pt-45 pb-40 mb-50">
+        <div class="container">
+            <div class="sec-title">
+                <h2>Reviews</h2>
+                <h4 class="pt-20">Read What's the People Are Saying About Us</h4>
+            </div>
+            <div class="blog-carousel owl-carousel owl-navigation-yes">
+                <div class="blog-item">
+                    
+                    <div class="blog-author">
+                        <div class="author-img">
+                            <img src="~/images/blog/author/1.jpg" alt="Author Image">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Sample Text</h3>
+                        </div>
+                    </div>
+                    <div class="blog-desc">
+                        <p>Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text .</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="blog-item">
+
+                    <div class="blog-author">
+                        <div class="author-img">
+                            <img src="~/images/blog/author/1.jpg" alt="Author Image">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Sample Text</h3>
+                        </div>
+                    </div>
+                    <div class="blog-desc">
+                        <p>Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text .</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 text-center">
-                    <div class="items">
-                        <div class="glyph-icon flaticon-tool"></div>
-                        <a href="service-details.html"><h3>TECHNICAL SERVICE</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. eleifend imperdiet</p>
+                
+                <div class="blog-item">
+
+                    <div class="blog-author">
+                        <div class="author-img">
+                            <img src="~/images/blog/author/3.jpg" alt="Author Image">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Sample Text</h3>
+                        </div>
                     </div>
+                    <div class="blog-desc">
+                        <p>Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text .</p>
+                    </div>
+                   
                 </div>
-                <div class="col-md-3 col-sm-6 text-center">
-                    <div class="items">
-                        <div class="glyph-icon flaticon-headphones"></div>
-                        <a href="service-details.html"><h3>SUPPORT CENTER</h3></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. eleifend imperdiet</p>
+                
+                <div class="blog-item">
+
+                    <div class="blog-author">
+                        <div class="author-img">
+                            <img src="~/images/blog/author/2.jpg" alt="Author Image">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Sample Text</h3>
+                        </div>
+                    </div>
+                    <div class="blog-desc">
+                        <p>Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text .</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- REVIEWS Start -->
+
+
+
+
+    <!-- Contact info Start -->
+    <div id="contact-info2" class="contact-info2">
+        <div class="container-fluid full-width">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 padding-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2411.658271265492!2d-1.644069084106672!3d52.81049842241192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a0251eb9f32bf%3A0x1a5e16d79cd9a75f!2siMenuWeb+-+EPOS+and+Online+Orderding+Systems+For+Fast+Food+Restaurants!5e0!3m2!1sen!2s!4v1516963135911" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="contact-details">
+                        <div class="get_in_touch">
+                            <div class="get_in_touch_wrapper">
+                                <h2 class="">Contact Info</h2>
+                                <h4 class="white-color mb-0">Workflow Dynamix Ltd.</h4>
+                                <ul>
+                                    <li class="address">
+                                        <span class="address_wrapper">14 Albert Street, Burton Upon Trent<br> Staffordshire, DE14 2NL<br><a href="tel:+4401283684020">T: +44 (0) 1283 684020</a><br>E: <a style="color:blue !important" href="mailto:info@workflowdynamix.com">info@workflowdynamix.com</a><br> Company Registration Number: 9617827 </span>
+                                    </li>
+                                    @*<li class="mail">
+                                        <a href="mailto:support@rstheme.com">support@rstheme.com</a>
+                                    </li>
+                                    <li class="www">
+                                        <span class="icon"><i class="icon-link"></i></span>
+                                        <a target="_blank" href="http://rstheme.com/">http://rstheme.com/</a>
+                                    </li>*@
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Welcome RSSEO Solution  End-->
+    <!-- Contact info End -->
 
 
 
+    <!-- Footer Start -->
+    @{
+        Html.RenderPartial("Include_Views/Footer_Landing_View");
+    }
 
+    <!-- Footer End -->
 
+    <!-- start scrollUp  -->
 
+    <div id="scrollUp">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    
+    <!-- modernizr js -->
 
 </body>
-

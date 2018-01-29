@@ -226,6 +226,10 @@
         font-size: 11px !important;
         margin-bottom: 10px;
     }
+    readtwo_benefits{
+        font-size: 13px !important;
+        margin-top:20px;
+    }
 
 
  .rs-slider .nivo-controlNav {
@@ -321,7 +325,7 @@
  margin-top: 30px;
 }
  .contact-info2 .padding-0 .contact-details .get_in_touch {
- width: 206px;
+ width: 300px;
 }
  .contact-info2 .padding-0 .contact-details {
  left: 20%;
@@ -533,6 +537,13 @@
 }
  #rs-services3 .services-wrap .glyph-icon:after,  #rs-services3 .services-wrap .glyph-icon:before {
  font-size: 50px;
+}
+ .benefits_image{
+     height:1100px;
+ }
+
+ .benefits_customer {
+    height: 520px;
 }
 }
 
@@ -1003,7 +1014,16 @@
 .cta-button.text-right{
 	text-align: center !important;
 }
+.margin_top_20_media{
+    margin-top:20px;
+}
+ .benefits_image{
+     height:1100px;
+ }
 
+ .benefits_customer {
+    height: 520px;
+}
 }
 
 
@@ -1076,6 +1096,13 @@
  .get-traffic.improve-visibility .apper-content h2 {
  font-size: 28px;
  line-height: 40px;
+}
+  .benefits_image{
+     height:1200px;
+ }
+
+ .benefits_customer {
+    height: 520px;
 }
 }
 
@@ -1222,6 +1249,13 @@
  font-size: 100px;
  line-height: 100px;
 }
+  .benefits_image{
+     height:1240px;
+ }
+
+ .benefits_customer {
+    height: 520px;
+}
 }
 
 
@@ -1255,5 +1289,12 @@
 }
  .rs-testimonial .testi-title {
  font-size: 10px;
+}
+  .benefits_image{
+     height:1240px;
+ }
+
+ .benefits_customer {
+    height: 520px;
 }
 }

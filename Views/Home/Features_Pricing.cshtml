@@ -1,0 +1,616 @@
+﻿<body class="home2">
+
+    <!--Preload Start-->
+    @{
+        Html.RenderPartial("Include_Views/PreLoader");
+    }
+
+    <!--Preload End-->
+    <!--Header Start-->
+    @{
+        Html.RenderPartial("Include_Views/Header");
+    }
+
+    <!--Header End-->
+    <!-- Slider Section Start Here -->
+
+    <div class="slider-main slider-home mb-60">
+        <div class="overlay blue_orange_background_gradient">
+            <div class="row pt-130">
+                <div class="col-xs-1 col-sm-2 col-md-3"></div>
+                <div id="paypal_img_div" class="col-xs-10 col-sm-8 col-md-6 text-center">
+                    <h1 class="white-color pt-45" data-animation-in="slideInRight" data-animation-out="animate-out fadeOut">Sample Text Sample Text </h1>
+                    <p class="white-color" data-animation-in="zoomIn" data-animation-out="animate-out fadeOutLeft">Sample Text Sample Text Sample Text Sample Text Sample Text</p>
+                </div>
+                <div class="col-xs-1 col-sm-2 col-md-3"></div>
+            </div>
+
+            <div class="row pt-70 pb-70">
+                <div class="col-xs-12 col-sm-12 col-md-4"></div>
+                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    @*<a href="#" class="readon yellow" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Start Free Trial</a>*@
+                    <a href="#" class="readon_orange_btn" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Start Free Trial</a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Slider Section end Here -->
+
+
+
+
+
+    <div id="list_features_div" class="mb-60">
+        <div class="container">
+            <div class="row">
+                <div class="hidden-xs hidden-sm col-md-2 margin_top_20_media">
+                    <p class="floating_div_style">Sample Text Sample Text Sample Text Sample Text Sample Text </p>
+                </div>
+                @*<div class="clearfix"></div>*@
+                <div class="col-md-8">
+                    <!-- Component bComparisonTable -->
+                    <div id="comparison" class="avg-comparison-table transparent-table gray-bg">
+                        <div class="avg-comparison-table-inner">
+                            <table class="table table-responsive products-3">
+                                <thead>
+                                    <tr>
+                                        <th class="feature" width="40%">
+                                            <h2><span class="text-black">Sample Text Sample Text Sample Text</span></h2>
+
+                                        </th>
+                                        <th class="column text-center position-relative  selected custom-image">
+                                            <a href="#" class="initial display-block" data-platform="{&quot;platform_pc&quot;:&quot;/en-ww/file-server-business-edition&quot;,&quot;platform_android&quot;:&quot;&quot;,&quot;platform_ios&quot;:&quot;&quot;,&quot;platform_mac&quot;:&quot;&quot;}">
+                                                <img src="~/Content/images/fav.png" alt="Sample Text Sample Text Sample Text ">
+                                                <h3 class="text-medium">Sample Text Sample Text Sample Text</h3>
+                                            </a>
+                                        </th>
+                                        <th class="column text-center position-relative  selected custom-image">
+                                            <a href="#" class="initial display-block" data-platform="{&quot;platform_pc&quot;:&quot;/en-ww/antivirus-business-edition&quot;,&quot;platform_android&quot;:&quot;&quot;,&quot;platform_ios&quot;:&quot;&quot;,&quot;platform_mac&quot;:&quot;&quot;}">
+                                                <img src="~/Content/images/fav.png" alt="Sample Text Sample Text Sample Text ">
+                                                <h3 class="text-medium">Sample Text Sample Text Sample Text</h3>
+                                            </a>
+                                        </th>
+                                        <th class="column text-center position-relative  selected custom-image">
+                                            <a href="#" class="initial display-block" data-platform="{&quot;platform_pc&quot;:&quot;/en-ww/internet-security-business-edition&quot;,&quot;platform_android&quot;:&quot;&quot;,&quot;platform_ios&quot;:&quot;&quot;,&quot;platform_mac&quot;:&quot;&quot;}">
+                                                <img src="~/Content/images/fav.png" alt="Sample Text Sample Text Sample Text ">
+                                                <h3 class="text-medium">Sample Text Sample Text Sample Text</h3>
+                                            </a>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="text-left feature">
+                                            <span class="feature-heading">
+                                                Sample Text Sample Text
+
+                                            </span>
+                                            <span class="feature-description hidden-xs">
+                                                Sample Text Sample Text Sample Text Sample Text Sample Text
+                                            </span>
+
+                                        </td>
+                                        <td class="column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="dark_green_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="orange_red_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left feature">
+                                            <span class="feature-heading">
+                                                Sample Text Sample Text
+
+                                            </span>
+                                            <span class="feature-description hidden-xs">
+                                                Sample Text Sample Text Sample Text Sample Text Sample Text
+                                            </span>
+
+                                        </td>
+                                        <td class="column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="dark_green_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="orange_red_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left feature">
+                                            <span class="feature-heading">
+                                                Sample Text Sample Text
+
+                                            </span>
+                                            <span class="feature-description hidden-xs">
+                                                Sample Text Sample Text Sample Text Sample Text Sample Text
+                                            </span>
+
+                                        </td>
+                                        <td class="column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="dark_green_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="orange_red_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left feature">
+                                            <span class="feature-heading">
+                                                Sample Text Sample Text
+
+                                            </span>
+                                            <span class="feature-description hidden-xs">
+                                                Sample Text Sample Text Sample Text Sample Text Sample Text
+                                            </span>
+
+                                        </td>
+                                        <td class="column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="dark_green_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="orange_red_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left feature">
+                                            <span class="feature-heading">
+                                                Sample Text Sample Text
+
+                                            </span>
+                                            <span class="feature-description hidden-xs">
+                                                Sample Text Sample Text Sample Text Sample Text Sample Text
+                                            </span>
+
+                                        </td>
+                                        <td class="column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="dark_green_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="orange_red_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left feature">
+                                            <span class="feature-heading">
+                                                Sample Text Sample Text
+
+                                            </span>
+                                            <span class="feature-description hidden-xs">
+                                                Sample Text Sample Text Sample Text Sample Text Sample Text
+                                            </span>
+
+                                        </td>
+                                        <td class="column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="dark_green_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="orange_red_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left feature">
+                                            <span class="feature-heading">
+                                                Sample Text Sample Text
+
+                                            </span>
+                                            <span class="feature-description hidden-xs">
+                                                Sample Text Sample Text Sample Text Sample Text Sample Text
+                                            </span>
+
+                                        </td>
+                                        <td class="column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="dark_green_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="orange_red_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left feature">
+                                            <span class="feature-heading">
+                                                Sample Text Sample Text
+
+                                            </span>
+                                            <span class="feature-description hidden-xs">
+                                                Sample Text Sample Text Sample Text Sample Text Sample Text
+                                            </span>
+
+                                        </td>
+                                        <td class="column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="dark_green_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="orange_red_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left feature">
+                                            <span class="feature-heading">
+                                                Sample Text Sample Text
+
+                                            </span>
+                                            <span class="feature-description hidden-xs">
+                                                Sample Text Sample Text Sample Text Sample Text Sample Text
+                                            </span>
+
+                                        </td>
+                                        <td class="column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="dark_green_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="orange_red_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left feature">
+                                            <span class="feature-heading">
+                                                Sample Text Sample Text
+
+                                            </span>
+                                            <span class="feature-description hidden-xs">
+                                                Sample Text Sample Text Sample Text Sample Text Sample Text
+                                            </span>
+
+                                        </td>
+                                        <td class="column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="dark_green_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                        <td class=" column tick">
+                                            <span class="ficon-tick text-nevada">
+                                                <i class="orange_red_color fa fa-check fa-1_4x"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                            <div class="ct-buttons display-on-highlight">
+                                <div class="col-lg-5">
+                                    <div class="row">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-9">
+                                            <!-- Component reference -->
+                                            <!-- Component bGroup -->
+                                            <div class="group-sni-0-ref-1287 wrapper   ">
+                                                <div class="row">
+                                                    <div class="col col-sni-2-ref-1287 col-xs-12 col-md-3">
+                                                        <!-- Component bImage -->
+                                                        <div class="bg-image-sni-3-ref-1287   ">
+                                                            <img src="~/Content/images/fav.png" alt="Sample Text Sample Text Sample Text">
+                                                        </div>
+                                                        <style>
+                                                            .bg-image-sni-3-ref-1287 img {
+                                                                width: 100%;
+                                                                max-width: 55px;
+                                                            }
+                                                        </style>
+                                                        <!-- /Component bImage -->
+                                                    </div>
+                                                    <div class="col col-sni-4-ref-1287 col-xs-12 col-md-9 text-left p-0">
+                                                        <div class="text padding-md-right-tiny">
+                                                            <p class="text-medium font-avg-sans-4 margin-xs-top-none margin-xs-bottom-none text-green">Sample Text Sample</p>
+
+                                                            <p class="text-xx-small font-sans-serif text-nevada margin-xs-top-none">Sample Text Sample Text Sample Text Sample Text Sample Text.</p>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix "></div>
+                                                </div>
+                                            </div>
+                                            <!-- /Component bGroup -->
+                                            <!-- /Component reference -->
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 margin-xs-bottom-tiny margin-sm-bottom-tiny text-center">
+                                    <!-- Component bButton -->
+                                    <div class="text-center">
+                                        <a href="#" class="readon hidden-xs hidden-sm" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Buy</a>
+                                    </div>
+                                    <!-- /Component bButton -->
+
+
+                                </div>
+                                <div class="col-lg-2 margin-xs-bottom-tiny margin-sm-bottom-tiny text-xs-center mlr_20">
+                                    <!-- Component bButton -->
+                                    <div>
+                                        <a href="#" class="readon hidden-xs hidden-sm" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Buy</a>
+
+                                    </div>
+                                    <!-- /Component bButton -->
+
+
+                                </div>
+                                <div class="col-lg-2 margin-xs-bottom-tiny margin-sm-bottom-tiny text-xs-center">
+                                    <!-- Component bButton -->
+                                    <div>
+                                        <a href="#" class="readon hidden-xs hidden-sm" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Buy</a>
+
+                                    </div>
+                                    <!-- /Component bButton -->
+
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Component bComparisonTable -->
+                </div>
+                @*<div class="col-sm-12 col-xs-12 col-md-2 margin_top_20_media">*@
+                <div class="hidden-xs hidden-sm col-md-2 margin_top_20_media">
+                    <p class="floating_div_style">Floating Autoresponder for a prize draw for a free subscription of iMenu for a year. (Aweber Integeration)</p>
+                </div>
+
+            </div>
+
+
+            <div class="row mt-70">
+                <div class="col-xs-12 col-sm-3 col-md-4 text-center"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                    <a href="#" class="checkout_benefits white-color" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Check Out Benefits</a>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-4 text-center"></div>
+            </div>
+            <form id="contact-form" method="post" action="http://codesless.com/products/seo/mailer.php">
+
+                <div id="rs-contactform" class="rs-contactform row mt-70">
+                    @*<div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                    <a href="#" class="readnew white-color" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Book your Demo</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                    <a href="#" class="readnew white-color" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Request a Demo</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                    <a href="#" class="readnew white-color">Arrange a Call</a>
+                </div>*@
+
+                    <div class="col-sm-12 col-xs-12 col-md-3"></div>
+                    <div class="col-sm-6 col-md-2">
+                        <input class="p_12" type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <input class="p_12" type="text" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <input class="p_12" type="text" id="email" name="email" placeholder="Email" required>
+
+                    </div>
+
+                    <div class="col-sm-12 col-xs-12 col-md-3"></div>
+
+                </div>
+
+                <div class="row mt-20">
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-center"></div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                        @*<a href="#" class="checkout_benefits white-color" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Contact me</a>*@
+                        <input class="checkout_benefits white-color" type="submit" value="Contact me" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-center"></div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Partner Logo's Start -->
+    <div id="rs-partner" class="rs-partner sec-spacer mb-60">
+        <div class="container">
+            <div class="partner-carousel owl-carousel">
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/1.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/2.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/3.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/4.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/5.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/images/partner/6.png" alt="Partner Image"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Partner Logo's Start -->
+    <!-- REVIEWS Start -->
+    <div id="rs-blog" class="rs-blog pt-45 pb-40 mb-60">
+        <div class="container">
+            <div class="sec-title">
+                <h2>Reviews</h2>
+                <h4 class="pt-20">Read What's the People Are Saying About Us</h4>
+            </div>
+            <div class="blog-carousel owl-carousel owl-navigation-yes">
+                <div class="blog-item">
+
+                    <div class="blog-author">
+                        <div class="author-img">
+                            <img src="~/images/blog/author/1.jpg" alt="Author Image">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Sample Text</h3>
+                        </div>
+                    </div>
+                    <div class="blog-desc">
+                        <p>Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text .</p>
+                    </div>
+
+                </div>
+
+                <div class="blog-item">
+
+                    <div class="blog-author">
+                        <div class="author-img">
+                            <img src="~/images/blog/author/1.jpg" alt="Author Image">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Sample Text</h3>
+                        </div>
+                    </div>
+                    <div class="blog-desc">
+                        <p>Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text .</p>
+                    </div>
+                </div>
+
+                <div class="blog-item">
+
+                    <div class="blog-author">
+                        <div class="author-img">
+                            <img src="~/images/blog/author/3.jpg" alt="Author Image">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Sample Text</h3>
+                        </div>
+                    </div>
+                    <div class="blog-desc">
+                        <p>Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text .</p>
+                    </div>
+
+                </div>
+
+                <div class="blog-item">
+
+                    <div class="blog-author">
+                        <div class="author-img">
+                            <img src="~/images/blog/author/2.jpg" alt="Author Image">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Sample Text</h3>
+                        </div>
+                    </div>
+                    <div class="blog-desc">
+                        <p>Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text .</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- REVIEWS Start -->
+
+
+
+
+    <!-- Footer Start -->
+    @{
+        Html.RenderPartial("Include_Views/Footer_Landing_View");
+    }
+
+    <!-- Footer End -->
+    <!-- start scrollUp  -->
+
+    <div id="scrollUp">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <!-- modernizr js -->
+
+</body>

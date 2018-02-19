@@ -1,88 +1,488 @@
-﻿
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Twitter Bootstrap Wizard Plugin Basic Example</title>
-   
-    <style type="text/css">
-      body { font-size: 13px; font-family: Tahoma; }
-#wrap { width: 600px; margin: 200px auto; }
-a { color: #369; }
+﻿<body class="home2">
 
-div.progressbar {
-    border: 1px solid #db7a15;
-    background: #efefef;
-    border-radius: 6px;
-    -o-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;    
-}
+    <!--Preload Start-->
+    @{
+        Html.RenderPartial("Include_Views/PreLoader");
+    }
 
-.progressbar div {
-    width: auto;
-    background:#f00000;
-    height: 20px;
-    text-align: center;
-    font-size: 11px; 
-    font-weight: bold; 
-    color: #fff; 
-    line-height: 20px;
-     text-shadow: 0px 0px 3px #000;
-    -o-text-shadow: 0px 0px 3px #000;
-    -moz-text-shadow: 0px 0px 3px #000;
-    -webkit-text-shadow: 0px 0px 3px #000;
+    <!--Preload End-->
+    <!--Header Start-->
+    @{
+        Html.RenderPartial("Include_Views/Header");
+    }
 
-    border-radius: 6px;
-    -o-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-   
-}
-    </style>
-</head>
-<body>
+    <!--Header End-->
+    <!-- Slider Section Start Here -->
 
-    <div id="wrap">
-        <div class="progressbar" id="pb">
-            <div>100%</div>
+    <div class="slider-main slider-home mb-60">
+        <div class="overlay blue_orange_background_gradient">
+            <div class="row pt-130">
+                <div class="col-xs-1 col-sm-2 col-md-3"></div>
+                <div id="paypal_img_div" class="col-xs-10 col-sm-8 col-md-6 text-center">
+                    <h1 class="white-color pt-45" data-animation-in="slideInRight" data-animation-out="animate-out fadeOut">Sample Text Sample Text </h1>
+                    <p class="white-color" data-animation-in="zoomIn" data-animation-out="animate-out fadeOutLeft">Sample Text Sample Text Sample Text Sample Text Sample Text</p>
+                </div>
+                <div class="col-xs-1 col-sm-2 col-md-3"></div>
+            </div>
+
+            <div class="row pt-70 pb-70">
+                <div class="col-xs-12 col-sm-12 col-md-4"></div>
+                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    @*<a href="#" class="readon yellow" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Start Free Trial</a>*@
+                    <a href="#" class="readon_orange_btn" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Start Free Trial</a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4"></div>
+            </div>
         </div>
-        <a href="#" class="0">Set 0%</a>
-        <a href="#" class="3">Set 3%</a>
-        <a href="#" class="10">Set 10%</a>
-        <a href="#" class="15">Set 15%</a>
-        <a href="#" class="25">Set 25%</a>
-        <a href="#" class="40">Set 40%</a>
-        <a href="#" class="65">Set 65%</a>
-        <a href="#" class="90">Set 90%</a>
-        <a href="#" class="99">Set 99%</a>
-        <a href="#" class="100">Set 100%</a>
-
-
     </div>
 
 
-    <script>
-        $(document).ready(function () {
-            $('a').click(function () {
 
-                $('#pb div').stop(true).animate({
-                    width: $(this).attr('class') + '%'
-                }, {
 
-                    step: function (now) {
+    <!-- Slider Section end Here -->
 
-                        $(this).text(Math.round(now) + '%');
-                    },
-                    duration: 1000
-                });
-            });
 
-        });
-    </script>
 
+
+
+    <div id="list_features_div" class="mb-60">
+        <div class="container">
+            <div class="row">
+                <div class="hidden-xs hidden-sm col-md-2 margin_top_20_media">
+                    <p class="floating_div_style">Sample Text Sample Text Sample Text Sample Text Sample Text </p>
+                </div>
+                @*<div class="clearfix"></div>*@
+                <div class="col-md-8" style="border: 2px solid #35638a;padding:0">
+                    <!-- Component bComparisonTable -->
+                    <div id="comparison" class="transparent-table gray-bg">
+                        <div class="avg-comparison-table-inner">
+
+                            <div id="homepage-tabbed">
+                                <!--<ul class="tabbed nav nav-tabs border_bottom_blue" role="tablist">
+                                    <li class="col-xs-12 col-md-2 complete-systems active">
+                                        <a role="tab" href="#one" data-toggle="tab" class="tab-systems" aria-expanded="false">One</a>
+                                    </li>
+                                    <li class="col-xs-12 col-md-2 ipad-and-android ">
+                                        <a role="tab" href="#two" data-toggle="tab" class="tab-ipad" aria-expanded="true">Two</a>
+                                    </li>
+                                    <li class="col-xs-12 col-md-2 software">
+                                        <a role="tab" href="#three" data-toggle="tab" class="tab-software" aria-expanded="false">Three</a>
+                                    </li>
+                                    <li class="col-xs-12 col-md-2 software">
+                                        <a role="tab" href="#four" data-toggle="tab" class="tab-software" aria-expanded="false">Four</a>
+                                    </li>
+                                    <li class="col-xs-12 col-md-2 software">
+                                        <a role="tab" href="#five" data-toggle="tab" class="tab-software" aria-expanded="false">Five</a>
+                                    </li>
+                                    <li class="col-xs-12 col-md-2 software">
+                                        <a role="tab" href="#six" data-toggle="tab" class="tab-software" aria-expanded="false">Six</a>
+                                    </li>
+                                </ul>-->
+
+                                <ul class="nav nav-wizard border_bottom_blue">
+                                    <li class="active"><a role="tab" href="#one" data-toggle="tab" class="tab-systems a_transition_none" aria-expanded="false">One</a></li>
+                                    <li><a role="tab" href="#two" data-toggle="tab" class="tab-ipad a_transition_none" aria-expanded="true">Two</a></li>
+                                    <li><a role="tab" href="#three" data-toggle="tab" class="tab-software a_transition_none" aria-expanded="false">Three</a></li>
+                                    <li><a role="tab" href="#four" data-toggle="tab" class="tab-software a_transition_none" aria-expanded="false">Four</a></li>
+                                    <li><a role="tab" href="#five" data-toggle="tab" class="tab-software a_transition_none" aria-expanded="false">Five</a></li>
+                                    <li><a role="tab" href="#six" data-toggle="tab" class="tab-software a_transition_none" aria-expanded="false">Six</a></li>
+                                    <li><a role="tab" href="#seven" data-toggle="tab" class="tab-software a_transition_none" aria-expanded="false">Seven</a></li>
+                                    <li><a role="tab" href="#eight" data-toggle="tab" class="tab-software a_transition_none" aria-expanded="false">Eight</a></li>
+                                    @*<li><a role="tab" href="#nine" data-toggle="tab" class="tab-software" aria-expanded="false">Nine</a></li>
+                                    <li><a role="tab" href="#ten" data-toggle="tab" class="tab-software" aria-expanded="false">Ten</a></li>*@
+                                </ul>
+
+
+                                <div class="tab-content clearfix col-sm-12 pb-0">
+
+                                    <div id="one" class="tab-pane clearfix active">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <h3>Heading Sample Text One</h3>
+                                            </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <img class="img-responsive main-img till-img pb-20" alt="EPOS System" src="~/Images/Tab_Images/complete_system.png">
+                                                    <div class="col-md-12">
+                                                        <img class="img-responsive award-logo" src="~/Images/Tab_Images/AwardsHomepageNew@2x.png">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div class="clearfix row">
+                                                    </div>
+
+                                                    <div class="p-wrapper">
+                                                        <p class="text-justify">
+                                                            Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="clearfix"></div>
+
+                                                <div class="p-wrapper pt-25">
+                                                    <p class="text-justify p_tabbed_padding">
+                                                        Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                    </div>
+
+
+                                    <div id="two" class="tab-pane clearfix">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <h3>Heading Sample Text Two</h3>
+                                            </div>
+                                           
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="clearfix row">
+                                                </div>
+
+                                                <div class="p-wrapper">
+                                                    <p class="text-justify">
+                                                        Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <img class="img-responsive main-img till-img pb-20" alt="EPOS System" src="~/Images/Tab_Images/complete_system.png">
+                                                <div class="col-md-12">
+                                                    <img class="img-responsive award-logo" src="~/Images/Tab_Images/AwardsHomepageNew@2x.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="clearfix"></div>
+
+                                            <div class="p-wrapper pt-25">
+                                                <p class="text-justify p_tabbed_padding">
+                                                    Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div id="three" class="tab-pane clearfix">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <h3>Heading Sample Text Three</h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <img class="img-responsive main-img till-img pb-20" alt="EPOS System" src="~/Images/Tab_Images/complete_system.png">
+                                                <div class="col-md-12">
+                                                    <img class="img-responsive award-logo" src="~/Images/Tab_Images/AwardsHomepageNew@2x.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="clearfix row">
+                                                </div>
+
+                                                <div class="p-wrapper">
+                                                    <p class="text-justify">
+                                                        Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="clearfix"></div>
+
+                                            <div class="p-wrapper pt-25">
+                                                <p class="text-justify p_tabbed_padding">
+                                                    Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    
+
+
+                                    <div id="four" class="tab-pane clearfix">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <h3>Heading Sample Text Four</h3>
+                                            </div>
+                                           
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="clearfix row">
+                                                </div>
+
+                                                <div class="p-wrapper">
+                                                    <p class="text-justify">
+                                                        Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <img class="img-responsive main-img till-img pb-20" alt="EPOS System" src="~/Images/Tab_Images/complete_system.png">
+                                                <div class="col-md-12">
+                                                    <img class="img-responsive award-logo" src="~/Images/Tab_Images/AwardsHomepageNew@2x.png">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="clearfix"></div>
+
+                                            <div class="p-wrapper pt-25">
+                                                <p class="text-justify p_tabbed_padding">
+                                                    Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div id="five" class="tab-pane clearfix">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <h3>Heading Sample Text Five</h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <img class="img-responsive main-img till-img pb-20" alt="EPOS System" src="~/Images/Tab_Images/complete_system.png">
+                                                <div class="col-md-12">
+                                                    <img class="img-responsive award-logo" src="~/Images/Tab_Images/AwardsHomepageNew@2x.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="clearfix row">
+                                                </div>
+
+                                                <div class="p-wrapper">
+                                                    <p class="text-justify">
+                                                        Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="clearfix"></div>
+
+                                            <div class="p-wrapper pt-25">
+                                                <p class="text-justify p_tabbed_padding">
+                                                    Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div id="six" class="tab-pane clearfix">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <h3>Heading Sample Text Six</h3>
+                                            </div>
+                                           
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="clearfix row">
+                                                </div>
+
+                                                <div class="p-wrapper">
+                                                    <p class="text-justify">
+                                                        Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <img class="img-responsive main-img till-img pb-20" alt="EPOS System" src="~/Images/Tab_Images/complete_system.png">
+                                                <div class="col-md-12">
+                                                    <img class="img-responsive award-logo" src="~/Images/Tab_Images/AwardsHomepageNew@2x.png">
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="clearfix"></div>
+
+                                            <div class="p-wrapper pt-25">
+                                                <p class="text-justify p_tabbed_padding">
+                                                    Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="seven" class="tab-pane clearfix">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <h3>Heading Sample Text Seven</h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <img class="img-responsive main-img till-img pb-20" alt="EPOS System" src="~/Images/Tab_Images/complete_system.png">
+                                                <div class="col-md-12">
+                                                    <img class="img-responsive award-logo" src="~/Images/Tab_Images/AwardsHomepageNew@2x.png">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="clearfix row">
+                                                </div>
+
+                                                <div class="p-wrapper">
+                                                    <p class="text-justify">
+                                                        Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="clearfix"></div>
+
+                                            <div class="p-wrapper pt-25">
+                                                <p class="text-justify p_tabbed_padding">
+                                                    Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div id="eight" class="tab-pane clearfix">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <h3>Heading Sample Text Eight</h3>
+                                            </div>
+
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="clearfix row">
+                                                </div>
+
+                                                <div class="p-wrapper">
+                                                    <p class="text-justify">
+                                                        Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                        Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-xs-12 col-sm-6">
+                                                <img class="img-responsive main-img till-img pb-20" alt="EPOS System" src="~/Images/Tab_Images/complete_system.png">
+                                                <div class="col-md-12">
+                                                    <img class="img-responsive award-logo" src="~/Images/Tab_Images/AwardsHomepageNew@2x.png">
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="clearfix"></div>
+
+                                            <div class="p-wrapper pt-25">
+                                                <p class="text-justify p_tabbed_padding">
+                                                    Sample text Sample text Sample text texts Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                    Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text Sample text.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Component bComparisonTable -->
+                </div>
+                @*<div class="col-sm-12 col-xs-12 col-md-2 margin_top_20_media">*@
+                <div class="hidden-xs hidden-sm col-md-2 margin_top_20_media">
+                    <p class="floating_div_style">Floating Autoresponder for a prize draw for a free subscription of iMenu for a year. (Aweber Integeration)</p>
+                </div>
+
+            </div>
+
+
+            <div class="row mt-70">
+                <div class="col-xs-12 col-sm-3 col-md-4 text-center"></div>
+                <div class="col-xs-12 col-sm-3 col-md-1 text-center">
+                    <img src="~/Images/static_images/badge.png" style="max-width:200% !important"/>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 text-center pt-25">
+                    <a href="#" class="readon_orange_btn" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Start Free Trial</a>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-4 text-center"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+   
+  
+    <!-- Footer Start -->
+    @{
+        Html.RenderPartial("Include_Views/Footer_Landing_View");
+    }
+
+    <!-- Footer End -->
+    <!-- start scrollUp  -->
+
+    <div id="scrollUp">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <!-- modernizr js -->
 
 </body>
-</html>

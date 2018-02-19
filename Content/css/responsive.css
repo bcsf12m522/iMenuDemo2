@@ -135,6 +135,9 @@
  font-size: 14px;
  padding: 6px 10px;
 }
+ .floating_div_style {
+    font-size: 12px;
+}
 }
 
 
@@ -165,6 +168,7 @@
     font-size: 12px;
     text-align:right;
 }
+
 }
 
 /* Layout: Min 1600px to Higher. */
@@ -191,6 +195,7 @@
  .pr-md-65 {
  padding-right: 65px;
 }
+
 }
 
 

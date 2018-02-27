@@ -1,4 +1,18 @@
-﻿<body class="home2">
+﻿<style>
+    .affix {
+    top: 20px;
+    z-index: 9999 !important;
+    /*width: 170px;*/
+    top: 80px;
+    z-index: 9999 !important;
+    width: 168px;
+}
+#nav1.affix-bottom {
+    /*position: absolute;*/
+    /*width: 170px*/;
+  }
+</style>
+<body class="home2">
 
     <!--Preload Start-->
     @{
@@ -48,8 +62,11 @@
     <div id="list_features_div" class="mb-60">
         <div class="container">
             <div class="row">
-                <div class="hidden-xs hidden-sm col-md-2 margin_top_20_media">
-                    <p class="floating_div_style">Sample Text Sample Text Sample Text Sample Text Sample Text </p>
+                <div id="myHeader" class="hidden-xs hidden-sm col-md-2 margin_top_20_media" >
+                    <div  class="hidden-xs hidden-sm margin_top_20_media" data-spy="affix" data-offset-top="605" data-offset-bottom="1782">
+                        <p class="floating_div_style">Sample Text Sample Text Sample Text Sample Text Sample Text </p>
+                    </div>
+                    
                 </div>
                 @*<div class="clearfix"></div>*@
                 <div class="col-md-8">
@@ -355,17 +372,8 @@
                                             </span>
                                         </td>
                                     </tr>
-                                </tbody>
-
-                            </table>
-
-                            <div class="ct-buttons display-on-highlight">
-                                <div class="col-lg-5">
-                                    <div class="row">
-
-                                        <div class="col-xs-12 col-sm-12 col-md-9">
-                                            <!-- Component reference -->
-                                            <!-- Component bGroup -->
+                                    <tr>
+                                        <td class="text-left feature">
                                             <div class="group-sni-0-ref-1287 wrapper   ">
                                                 <div class="row">
                                                     <div class="col col-sni-2-ref-1287 col-xs-12 col-md-3">
@@ -383,58 +391,47 @@
                                                     </div>
                                                     <div class="col col-sni-4-ref-1287 col-xs-12 col-md-9 text-left p-0">
                                                         <div class="text padding-md-right-tiny">
-                                                            <p class="text-medium font-avg-sans-4 margin-xs-top-none margin-xs-bottom-none text-green">Sample Text Sample</p>
+                                                            <p class="text-medium font-avg-sans-4 margin-xs-top-none margin-xs-bottom-none text-green p_margin">Sample Text</p>
 
-                                                            <p class="text-xx-small font-sans-serif text-nevada margin-xs-top-none">Sample Text Sample Text Sample Text Sample Text Sample Text.</p>
+                                                            <p class="hidden-xs text-xx-small font-sans-serif text-nevada margin-xs-top-none">Sample Text Sample</p>
 
                                                         </div>
                                                     </div>
                                                     <div class="clearfix "></div>
                                                 </div>
                                             </div>
-                                            <!-- /Component bGroup -->
-                                            <!-- /Component reference -->
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 margin-xs-bottom-tiny margin-sm-bottom-tiny text-center">
-                                    <!-- Component bButton -->
-                                    <div class="text-center">
-                                        <a href="#" class="readon hidden-xs hidden-sm" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Buy</a>
-                                    </div>
-                                    <!-- /Component bButton -->
 
 
-                                </div>
-                                <div class="col-lg-2 margin-xs-bottom-tiny margin-sm-bottom-tiny text-xs-center mlr_20">
-                                    <!-- Component bButton -->
-                                    <div>
-                                        <a href="#" class="readon hidden-xs hidden-sm" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Buy</a>
 
-                                    </div>
-                                    <!-- /Component bButton -->
+                                        </td>
+                                        <td class="column tick">
+                                            <div class="text-center">
+                                                <a href="#" class="readon small_button_table" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Buy</a>
+                                            </div>
+                                        </td>
+                                        <td class=" column tick">
+                                            <div class="text-center">
+                                                <a href="#" class="readon small_button_table" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Buy</a>
+                                            </div>
+                                        </td>
+                                        <td class=" column tick">
+                                            <div class="text-center">
+                                                <a href="#" class="readon small_button_table" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Buy</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
 
+                            </table>
 
-                                </div>
-                                <div class="col-lg-2 margin-xs-bottom-tiny margin-sm-bottom-tiny text-xs-center">
-                                    <!-- Component bButton -->
-                                    <div>
-                                        <a href="#" class="readon hidden-xs hidden-sm" data-animation-in="slideInUp" data-animation-out="animate-out fadeOutUp">Buy</a>
-
-                                    </div>
-                                    <!-- /Component bButton -->
-
-
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
+                            
                         </div>
                     </div>
                     <!-- /Component bComparisonTable -->
                 </div>
                 @*<div class="col-sm-12 col-xs-12 col-md-2 margin_top_20_media">*@
-                <div class="hidden-xs hidden-sm col-md-2 margin_top_20_media">
+                <div id="myHeader" class="hidden-xs hidden-sm col-md-2 margin_top_20_media">
+                    
                     <p class="floating_div_style">Floating Autoresponder for a prize draw for a free subscription of iMenu for a year. (Aweber Integeration)</p>
                 </div>
 
@@ -614,3 +611,16 @@
     <!-- modernizr js -->
 
 </body>
+
+@*<script>
+
+    var header = document.getElementById("myHeader");
+    alert();
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            header.classList.add("affix");
+        } else {
+            header.classList.remove("affix");
+        }
+    }
+</script>*@

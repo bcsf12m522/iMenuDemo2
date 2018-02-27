@@ -1492,3 +1492,50 @@
     height: 520px;
 }*/
 }
+
+/*@media for bottom button (max-width:446){
+    .new{
+
+    }
+}*/
+
+@media screen and (max-width: 480px){
+  
+    /* show it on small screens */
+  #my-content { display: block; } 
+}
+@media screen and (min-width: 480px){
+    /* hide it elsewhere */
+    #my-content { display: none !important ;}
+}
+
+@media screen and (max-width: 480px){
+
+    .contact-info2 .padding-0 .contact-details .get_in_touch {
+       
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px){
+    /* hide it elsewhere */
+    #hide_contect_div { display: block; }
+}
+
+@media screen and (max-width: 480px) {
+  .small_button_table{
+      padding:5px 10px;
+  }
+   
+  .p_margin{
+      margin-left:14px;
+  }
+}
+@media screen and (max-width: 974px) {
+  
+    .p_sec_magin{
+        margin-left: 14px;
+    }
+  
+}
+    
+    

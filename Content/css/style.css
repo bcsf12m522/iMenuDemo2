@@ -1571,12 +1571,13 @@ ul.desc-list li i {
     12. Get Traffic
 ---------------------------------------*/
 .get-traffic {
-  background-image: url(images/home/get-traffic.jpg);
-  background-size: cover;
-  position: relative;
-  color: #ffffff;
-  overflow: hidden;
-  padding: 68px 0 82px;
+    background-image: url('../images/home/get-traffic.jpg');
+
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 68px 0 82px;
 }
 .get-traffic:after {
   background: #243a4f;

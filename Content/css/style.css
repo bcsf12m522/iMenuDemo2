@@ -673,7 +673,7 @@ ul.desc-list li i {
   background: #ffffff;
 }
 #rs-header .menu-area.sticky .logo-area {
-  line-height: 75px;
+  /*line-height: 75px;*/
 }
 #rs-header .menu-area.sticky #main-nav ul li {
   height: 80px;
@@ -873,7 +873,7 @@ ul.desc-list li i {
   color: #ffffff;
 }
 .home2 #rs-header .menu-area #main-nav.stellarnav.mobile .menu-toggle {
-  color: #ffffff;
+  color: #ff6c39;
 }
 .home2 #rs-header .menu-area .submenu {
   background: #243a4f !important;

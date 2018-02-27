@@ -28,7 +28,7 @@
     var header = $('.menu-sticky');
     var win = $(window);
     
-    if ($(window).width() >= 991) {
+    if ($(window).width() >= 320) {
         win.on('scroll', function() {
 
            var scroll = win.scrollTop();

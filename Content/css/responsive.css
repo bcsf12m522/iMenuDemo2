@@ -1537,5 +1537,14 @@
     }
   
 }
+@media screen and (max-width:360px)
+{
+    .sec_small_btn{
+            padding: 5px 2px;
+    }
+    .image_width{
+        max-width: 40px;
+    }
+}
     
     

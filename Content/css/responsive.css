@@ -1521,6 +1521,9 @@
     #hide_contect_div { display: block; }
 }
 
+
+/*features-pricing*/
+
 @media screen and (max-width: 480px) {
   .small_button_table{
       padding:5px 7px;
@@ -1546,5 +1549,28 @@
         max-width: 40px;
     }
 }
-    
+@media screen and (max-width:300px){
+    .sec_small_btn{
+            padding: 6px 10px;
+    }
+    .image_width{
+        max-width: 40px;
+    }
+}
+@media screen and (max-width:375px){
+    .sec_small_btn{
+            padding: 3px 2px;
+    }
+    .image_width{
+        max-width: 40px;
+    }
+}
+/*@media screen and (min-width:768px){
+    .sec_small_btn{
+            padding: 10px 20px;
+    }
+    .image_width{
+        max-width: 40px;
+    }
+}*/
     

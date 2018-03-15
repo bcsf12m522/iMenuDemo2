@@ -701,6 +701,7 @@ ul.desc-list li i {
 #rs-header .menu-area #main-nav {
   margin-bottom: 0;
   border: 0;
+  margin-top: 15px;
 }
 #rs-header .menu-area #main-nav.mobile ul li:hover a,
 #rs-header .menu-area #main-nav.mobile ul li.active a {

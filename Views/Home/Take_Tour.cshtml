@@ -1,4 +1,17 @@
-﻿<body class="home2">
+﻿<style>
+    .affix {
+        position: fixed;
+        top: 102px;
+        z-index: 9999 !important;
+        /*width: 170px;*/
+    }
+
+    .myflotdiv {
+        width: 180px;
+    }
+</style>
+
+<body class="home2">
 
     <!--Preload Start-->
     @{
@@ -8,7 +21,7 @@
     <!--Preload End-->
     <!--Header Start-->
     @{
-        Html.RenderPartial("Include_Views/Header");
+        Html.RenderPartial("Include_Views/Header"); 
     }
 
     <!--Header End-->
@@ -47,10 +60,16 @@
 
     <div id="list_features_div" class="mb-60">
         <div class="container">
+
             <div class="row">
-                <div class="hidden-xs hidden-sm col-md-2 margin_top_20_media">
-                    <p class="floating_div_style">Sample Text Sample Text Sample Text Sample Text Sample Text </p>
+                <div class="col-md-2">
+                    <div id="myHeader" class="hidden-xs hidden-sm col-md-2 margin_top_20_media nav nav-pills nav-stacked myflotdiv" data-spy="affix" data-offset-top="605" data-offset-bottom="717">
+                        <p class="floating_div_style">Sample Text Sample Text Sample Text Sample Text Sample Text </p>
+                    </div>
                 </div>
+                @*<div class="hidden-xs hidden-sm col-md-2 margin_top_20_media">
+                    <p class="floating_div_style">Sample Text Sample Text Sample Text Sample Text Sample Text </p>
+                </div>*@
                 @*<div class="clearfix"></div>*@
                 <div class="col-md-8" style="border: 2px solid #35638a;padding:0">
                     <!-- Component bComparisonTable -->
@@ -446,8 +465,10 @@
                     <!-- /Component bComparisonTable -->
                 </div>
                 @*<div class="col-sm-12 col-xs-12 col-md-2 margin_top_20_media">*@
-                <div class="hidden-xs hidden-sm col-md-2 margin_top_20_media">
-                    <p class="floating_div_style">Floating Autoresponder for a prize draw for a free subscription of iMenu for a year. (Aweber Integeration)</p>
+                <div class="col-md-2">
+                    <div id="myHeader" class="hidden-xs hidden-sm col-md-2 margin_top_20_media nav nav-pills nav-stacked myflotdiv" data-spy="affix" data-offset-top="605" data-offset-bottom="717">
+                        <p class="floating_div_style">Sample Text Sample Text Sample Text Sample Text Sample Text </p>
+                    </div>
                 </div>
 
             </div>
